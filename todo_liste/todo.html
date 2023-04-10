@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="de-DE">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Todo-Liste</title>
+</head>
+<body>
+<div id="wrapper" class="wrap">
+    <h1>Todo Liste</h1>
+    <input id="todo_input" type="text" placeholder="Eingabe">
+    <button id="add_button">Hinzufügen</button>
+        <ul id="todo_ul">
+           <!-- Listenelemente werden hier eingefügt -->
+        </ul>
+</div>
+</body>
+<!-- Script könnte auch hier eingefügt werden -->
+<!--
+<script>
+    const todo_input = document.getElementById("todo_input");
+    const add_button = document.getElementById("add_button");
+    const todo_ul = document.getElementById("todo_ul");
+
+    add_button.addEventListener("click", () => {
+        let input = todo_input.value;
+        let newTodo = document.createElement("li");
+        newTodo.innerText = input + " ";
+
+        let delete_button = document.createElement("button");
+        delete_button.innerText = "X";
+
+        newTodo.appendChild(delete_button);
+        todo_ul.appendChild(newTodo);
+        todo_input.value ="";
+
+        delete_button.addEventListener("click", () => {
+        newTodo.remove();
+        })
+    }) -->
+</script>
+</html>
